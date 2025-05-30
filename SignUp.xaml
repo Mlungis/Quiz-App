@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="The_Quiz.SignUp"
+             Title="SignUp">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image Source="bluc.png" HeightRequest="150" WidthRequest="150" />
+
+            <VerticalStackLayout>
+                <Label
+                    Text="Create A New Account to Continue"
+                    FontSize="18"
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame 
+                    ZIndex="1"
+                    HasShadow="True" 
+                    HeightRequest="58" 
+                    WidthRequest="58" 
+                    CornerRadius="30">
+                    <Image Source="human.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame 
+                    HeightRequest="50" 
+                    Margin="-20,0,0,0"
+                    Padding="0" 
+                    HasShadow="True"
+                    BorderColor="White"
+                    BackgroundColor="White"
+                    HorizontalOptions="FillAndExpand"
+                    CornerRadius="15">
+                    <Entry
+                        x:Name="UsernameEntry"
+                        Margin="20,0,0,0"
+                        VerticalOptions="Center"
+                        Placeholder="Username"
+                        BackgroundColor="White"
+                        TextColor="Black"/>
+                </Frame>
+            </StackLayout>
+
+         
+            <StackLayout Orientation="Horizontal">
+                <Frame 
+                    ZIndex="1"
+                    HasShadow="True" 
+                    HeightRequest="58" 
+                    WidthRequest="58" 
+                    CornerRadius="30">
+                    <Image Source="human.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame 
+                    HeightRequest="50" 
+                    Margin="-20,0,0,0"
+                    Padding="0" 
+                    HasShadow="True"
+                    BorderColor="White"
+                    BackgroundColor="White"
+                    HorizontalOptions="FillAndExpand"
+                    CornerRadius="15">
+                    <Entry
+                        x:Name="EmailEntry"
+                        Margin="20,0,0,0"
+                        VerticalOptions="Center"
+                        Placeholder="Email"
+                        Keyboard="Email"
+                        BackgroundColor="White"
+                        TextColor="Black"/>
+                </Frame>
+            </StackLayout>
+
+          
+            <StackLayout Orientation="Horizontal">
+                <Frame 
+                    ZIndex="1"
+                    HasShadow="True" 
+                    HeightRequest="58" 
+                    WidthRequest="58" 
+                    CornerRadius="30"
+                    BackgroundColor="White">
+                    <Image Source="lock.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame 
+                    HeightRequest="50" 
+                    Margin="-20,0,0,0" 
+                    Padding="0" 
+                    HasShadow="True"
+                    BorderColor="Snow"
+                    HorizontalOptions="FillAndExpand"
+                    CornerRadius="15">
+                    <Entry
+                        x:Name="PasswordEntry"
+                        Margin="20,0,0,0"
+                        VerticalOptions="Center"
+                        Placeholder="Password"
+                        Keyboard="Email"
+                        IsPassword="True"
+                        BackgroundColor="White" 
+                        TextColor="Black"/>
+                </Frame>
+            </StackLayout>
+
+           
+            <StackLayout Orientation="Horizontal">
+                <Frame 
+                    ZIndex="1"
+                    HasShadow="True" 
+                    HeightRequest="58" 
+                    WidthRequest="58" 
+                    CornerRadius="30"
+                    BackgroundColor="White">
+                    <Image Source="lock.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame 
+                    HeightRequest="50" 
+                    Margin="-20,0,0,0" 
+                    Padding="0" 
+                    HasShadow="True"
+                    BorderColor="Snow"
+                    HorizontalOptions="FillAndExpand"
+                    CornerRadius="15">
+                    <Entry
+                        x:Name="ConfirmPasswordEntry"
+                        Margin="20,0,0,0"
+                        VerticalOptions="Center"
+                        Placeholder="Confirm Password"
+                        Keyboard="Email"
+                        IsPassword="True"
+                        BackgroundColor="White"
+                        TextColor="Black"/>
+                </Frame>
+            </StackLayout>
+
+            <Button Text="Sign Up" 
+                    WidthRequest="200"
+                    CornerRadius="30"
+                    HorizontalOptions="Center"
+                    BackgroundColor="#0792ef" 
+                    Clicked="OnSignUpClicked" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
